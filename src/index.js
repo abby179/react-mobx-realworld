@@ -8,18 +8,19 @@ import App from './components/App'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCog, faEdit, faHome, faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCog, faEdit, faHome, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 import commonStore from './stores/commonStore'
+import authStore from './stores/authStore'
 
 library.add(faEdit)
 library.add(faCog)
 library.add(faHome)
 library.add(faSignInAlt)
-library.add(faSignOutAlt)
 
 const stores = {
   commonStore,
+  authStore,
 }
 
 ReactDOM.render((
